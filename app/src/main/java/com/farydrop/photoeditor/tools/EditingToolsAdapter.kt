@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.farydrop.photoeditor.R
 
-class EditingToolsAdapter(private val mOnItemSelected: OnOtemSeleted): RecyclerView.Adapter<EditingToolsAdapter.ViewHolder>() {
+class EditingToolsAdapter(private val mOnItemSelected: OnItemSelected): RecyclerView.Adapter<EditingToolsAdapter.ViewHolder>() {
 
     private val mToolList: MutableList<ToolModel> = ArrayList()
 
@@ -37,7 +37,7 @@ class EditingToolsAdapter(private val mOnItemSelected: OnOtemSeleted): RecyclerV
         }
     }
 
-    interface OnOtemSeleted {
+    interface OnItemSelected {
         fun onToolSelected(toolType: ToolType)
     }
 

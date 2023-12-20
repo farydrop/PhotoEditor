@@ -60,7 +60,7 @@ RecyclerView.Adapter<FilterViewAdapter.ViewHolder>()
     }
 
     private fun setupFilters(){
-        mPairList.add(Pair("filters/original.jpg", PhotoFilter.NONE))
+        mPairList.add(Pair("filters/original.png", PhotoFilter.NONE))
         mPairList.add(Pair("filters/auto_fix.png", PhotoFilter.AUTO_FIX))
         mPairList.add(Pair("filters/brightness.png", PhotoFilter.BRIGHTNESS))
         mPairList.add(Pair("filters/contrast.png", PhotoFilter.CONTRAST))
